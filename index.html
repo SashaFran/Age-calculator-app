@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Age calculator app</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="./javascript.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="table">
+        <div class="dform">
+          <div class="dform-input">
+            <label for="fday" id="flabelday">DAY</label>
+            <input type="number" id="fday" name="fday" placeholder="DD">
+            <div id="errorDay" class="error"></div>
+          </div>
+          <div class="dform-input">
+            <label for="fmonth" id="flabelmonth">MONTH</label>
+            <p></p>
+            <input type="number" id="fmonth" name="fmonth" placeholder="MM">
+            <div id="errorMonth" class="error"></div>
+          </div>
+          <div class="dform-input">
+            <label for="fyear" id="flabelyear">YEAR</label>
+            <p></p>
+            <input type="number" id="fyear" name="fyear" placeholder="YYYY">
+            <div id="errorYear" class="error"></div>
+          </div>
+        </div>
+        <div class="table-bottom">
+          <div class="dbutton">
+            <div class="linea">
+              <button class="ibutton" onclick="pulsaBoton()"></button>
+            </div>
+          </div>
+
+          <div class="resultado">
+            <span id="years" class="num">--</span> years<br>
+            <span id="months" class="num">--</span> months<br>
+            <span id="days" class="num">--</span> days
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Ana María Águila</a>.
+    </div>
+  </body>
+
+</html>

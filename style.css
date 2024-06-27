@@ -1,0 +1,188 @@
+/** @format */
+
+:root {
+  --colour-purple: hsl(259, 100%, 65%);
+  --colour-light-red: hsl(0, 100%, 67%);
+  --colour-white: hsl(0, 0%, 100%);
+  --colour-off-white: hsl(0, 0%, 94%);
+  --colour-light-grey: hsl(0, 0%, 86%);
+  --colour-smokey-grey: hsl(0, 1%, 44%);
+  --colour-off-black: hsl(0, 0%, 8%);
+  --input-size: 32px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: Poppinsitalic;
+  src: url(./assets/fonts/Poppins-Italic.ttf);
+}
+
+@font-face {
+  font-family: PoppinsBold;
+  src: url(./assets/fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: PoppinsExtraBold;
+  src: url(./assets/fonts/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: PoppinsExtraBoldItalic;
+  src: url(./assets/fonts/Poppins-ExtraBoldItalic.ttf);
+}
+
+body {
+  background-color: var(--colour-off-white);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+.table {
+  background-color: var(--colour-white);
+  width: 50%;
+  height: auto;
+  border-radius: 20px 20px 150px 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 3em 0 3em 3em;
+}
+
+.dform {
+  display: flex;
+  width: 75%;
+  gap: 1em;
+  padding: 0 0 0.5em 0;
+}
+
+.dform input {
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+/* Firefox */
+.dform input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.dform > div {
+  font-family: PoppinsBold;
+  color: var(--colour-smokey-grey);
+  font-size: 0.6em;
+  letter-spacing: 2px;
+}
+.dform-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.dform-input input {
+  width: 85%;
+  padding: 0 0 0 0.5em;
+}
+input {
+  border: 1px solid var(--colour-off-white);
+  border-radius: 5px;
+  margin-top: 3px;
+  font-family: PoppinsBold;
+  font-size: var(--input-size);
+  color: var(--colour-off-black);
+  cursor: pointer;
+}
+
+.dbutton {
+  display: flex;
+}
+
+.linea {
+  border-top: 2px solid var(--colour-off-white);
+  height: 2px;
+  width: 90%;
+  display: flex;
+  padding: 0;
+  margin: 20px 0 0 0;
+  align-items: center;
+  justify-content: end;
+}
+
+.ibutton {
+  background-image: url('./assets/images/icon-arrow.svg');
+  background-size: 50%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 70px;
+  background-color: var(--colour-purple);
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.ibutton:hover {
+  background-color: #000;
+}
+
+.ibutton:active {
+  background-color: #000;
+}
+
+.resultado {
+  font-family: PoppinsExtraBoldItalic;
+  font-size: 4em;
+  padding: 0.3em 0 0 0;
+}
+
+.num,
+.attribution a {
+  color: var(--colour-purple);
+}
+
+.error {
+  color: red;
+  font-size: 1em;
+  font-family: PoppinsItalic;
+  letter-spacing: normal;
+  margin-top: 5px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .table {
+    width: 90vw;
+    height: 80vh;
+  }
+
+  .dform {
+    justify-content: center;
+  }
+
+  .dform > div {
+    margin: 20px 10px 20px 10px;
+  }
+
+  input {
+    height: 40px;
+    width: 100%;
+  }
+
+  .linea {
+    margin: 20px 0 40px 25px;
+    justify-content: center;
+  }
+}
