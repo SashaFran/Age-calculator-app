@@ -95,7 +95,7 @@ body {
 input {
   border: 1px solid var(--colour-off-white);
   border-radius: 5px;
-  margin-top: 3px;
+  margin-top: 0.3em;
   font-family: PoppinsBold;
   font-size: var(--input-size);
   color: var(--colour-off-black);
@@ -112,7 +112,7 @@ input {
   width: 90%;
   display: flex;
   padding: 0;
-  margin: 20px 0 0 0;
+  margin: 1.2em 0 0 0;
   align-items: center;
   justify-content: end;
 }
@@ -131,11 +131,11 @@ input {
 }
 
 .ibutton:hover {
-  background-color: #000;
+  background-color: var(--colour-off-black);
 }
 
 .ibutton:active {
-  background-color: #000;
+  background-color: var(--colour-off-black);
 }
 
 .resultado {
@@ -154,7 +154,7 @@ input {
   font-size: 1em;
   font-family: PoppinsItalic;
   letter-spacing: normal;
-  margin-top: 5px;
+  margin-top: 0.3em;
 }
 
 .attribution {
